@@ -1,9 +1,6 @@
-import React, { Component } from 'react';
 import css from './ImageGalleryItem.module.css';
 
-export class ImageGalleryItem extends Component {
-  render() {
-    const { webformatURL, tags, largeImageURL, openModal } = this.props;
+export function ImageGalleryItem({ webformatURL, tags, largeImageURL, openModal }) {
     return (
       <>
         <li
@@ -19,4 +16,4 @@ export class ImageGalleryItem extends Component {
       </>
     );
   }
-}
+
